@@ -11,16 +11,22 @@
                     <Form :validation-schema="schema" @submit="onSubmit" @invalid-submit="onInvalidSubmit">
                       <div>
                         <h2 class="fw-bold text-center mb-4">Forgot your password?</h2>
-                        <p class="text-center mb-4">Enter your email address and we'll send you a link to reset your password</p>
+                        <p class="text-center mb-4">Enter your email address and we'll send you a link to reset your
+                          password</p>
                       </div>
                       <div data-mdb-input-init class="form-outline mb-4">
                         <Field type="email" name="email" class="form-control form-control-lg"
                                placeholder="Your email address"/>
                       </div>
                       <div class="text-center text-lg-start mt-4 pt-2">
-                        <button data-mdb-button-init data-mdb-ripple-init class="submit-btn btn btn-light btn-lg btn-block" type="submit"
+                        <button data-mdb-button-init data-mdb-ripple-init
+                                class="submit-btn btn btn-light btn-lg btn-block" type="submit"
                                 style="padding-left: 2.5rem; padding-right: 2.5rem;">Reset
                         </button>
+                        <div class="d-flex justify-content-center mt-3">
+                          <router-link class="forgot-password-register-link" to="/register">Register</router-link>
+                          <router-link class="forgot-password-log-in-link" to="/login">Sign In</router-link>
+                        </div>
                       </div>
                     </Form>
                   </div>
@@ -34,8 +40,9 @@
   </section>
 </template>
 <script setup lang="ts">
-import { Form, Field } from 'vee-validate';
+import {Form, Field} from 'vee-validate';
 import * as Yup from 'yup';
+import {RouterLink} from "vue-router";
 
 const schema = Yup.object().shape({
   email: Yup.string().email().required()
@@ -58,6 +65,19 @@ function onInvalidSubmit() {
 </script>
 
 <style>
+.forgot-password-register-link {
+  margin-right: 10px;
+  color: #6b7f6f;
+  text-decoration: none;
+}
+.forgot-password-log-in-link {
+  margin-left: 10px;
+  color: #6b7f6f;
+  text-decoration: none;
+}
+.forgot-password-log-in-link:hover, .forgot-password-register-link:hover {
+  color: #232b2b;
+}
 @media (min-width: 992px) {
   .text-lg-start {
     text-align: center !important;
