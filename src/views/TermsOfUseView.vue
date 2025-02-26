@@ -1,6 +1,6 @@
 <template>
   <section style="min-height: 57vh;">
-    <h1>About Page</h1>
+    <h1>Terms of Use</h1>
   </section>
 </template>
 <script setup lang="ts">
