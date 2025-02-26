@@ -36,7 +36,7 @@
 <script setup lang="ts">
 import { Form, Field } from 'vee-validate';
 import * as Yup from 'yup';
-import {RouterLink} from "vue-router";
+
 const schema = Yup.object().shape({
   email: Yup.string().email().required()
 });
