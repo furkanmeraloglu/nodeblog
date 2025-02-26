@@ -32,6 +32,6 @@ import { RouterLink } from "vue-router";
   color: white;
 }
 .footer-menu-items:hover {
-  color: #b3005c;
+  color: #203423;
 }
 </style>

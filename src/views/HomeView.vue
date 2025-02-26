@@ -1,5 +1,8 @@
 <template>
   <section style="min-height: 57vh;">
-    <h1>Homepage</h1>
+    <HomeIntro />
   </section>
 </template>
+<script setup lang="ts">
+import HomeIntro from "@/components/Home/HomeIntro.vue";
+</script>

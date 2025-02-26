@@ -1,16 +1,12 @@
 <template>
-  <section class="d-flex justify-content-center align-items-center" style="min-height: 57vh;">
+  <section class="d-flex justify-content-center align-items-center" style="min-height: 61vh;">
     <div class="container py-5">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col col-xl-10">
-          <div class="card" style="border-radius: 1rem;">
-            <div class="row g-0 d-flex align-items-center">
-              <div class="col-md-6 col-lg-5 d-none d-md-block">
-                <img src="@public/images/sign-in.png"
-                     class="img-fluid log-in-image" alt="Sign In Image" style="border-radius: 1rem 0 0 1rem;">
-              </div>
-              <div class="col-md-6 col-lg-7 d-flex align-items-center">
-                <div class="card-body p-4 p-lg-5 text-black">
+        <div class="col col-md-8">
+          <div class="card" style="border-radius: 1rem; width: 100%;">
+            <div class="row d-flex justify-content-around align-items-center">
+              <div class="col-md-6 col-lg-7 d-flex justify-content-center align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black text-center">
                   <form>
                     <SocialAuth mode="Sign In"/>
                     <LogInForm/>
@@ -35,25 +31,18 @@
 
 <style>
 
-.log-in-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 0.8), black);
-}
-
 .btn {
-  --bs-btn-bg: #ed0080;
-  --bs-btn-border-color: #ed0080;
-  --bs-btn-border-hover-color: #ed0080;
+  --bs-btn-bg: #6b7f6f;
+  --bs-btn-border-color: #6b7f6f;
+  --bs-btn-border-hover-color: #6b7f6f;
   --bs-btn-hover-border-color: #f5f9fb;
-  --bs-btn-hover-bg: #b3005c;
+  --bs-btn-hover-bg: #6b7f6f;
   --bs-btn-color: #ffffff;
   --bs-btn-hover-color: #232b2b;
 }
 
 .register-link {
-  color: #ed0080;
+  color: #6b7f6f;
   text-decoration: none;
 }
 

@@ -18,6 +18,10 @@ import Footer from "@/components/Footer.vue";
 <style>
 main {
   background-color: #f5f9fb;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 </style>
 

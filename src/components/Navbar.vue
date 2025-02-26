@@ -2,7 +2,7 @@
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-xxl flex-wrap flex-md-nowrap">
           <router-link class="navbar-brand" to="/home">
-            <img src="../../public/images/node-blog-logo.png" alt="Node Blog Logo" class="d-inline-block align-top">
+            <img src="../../public/images/nodeblog-logo.png" alt="Node Blog Logo" class="d-inline-block align-top">
           </router-link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,17 +62,28 @@
 
     <style>
     .navbar {
-      background-color: #ed0080 !important;
-      font-weight: 500;
+      background-color: #6b7f6f !important;
+      font-weight: 700;
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
     }
 
     .dropdown-menu {
-      background-color: #ed0080 !important;
+      background-color: #6b7f6f !important;
     }
 
     .navbar-brand img {
-      width: 50px;
-      height: 50px;
+      width: 75px;
+      height: 30px;
+      margin-right: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-brand {
+        margin-bottom: 15px; /* Mesafeyi artırmak için bu değeri ayarlayın */
+        margin-top: 15px; /* Mesafeyi artırmak için bu değeri ayarlayın */
+      }
     }
 
     .nav-link {
@@ -84,7 +95,7 @@
     }
 
     .nav-link:hover {
-      color: #b3005c;;
+      color: #203423;
     }
 
     .nav-link::after {

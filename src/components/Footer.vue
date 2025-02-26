@@ -1,10 +1,9 @@
 <template>
   <div>
     <footer
-        class="text-center text-lg-start text-white"
-        style="background-color: #232b2b"
+        class="text-center text-lg-start text-white pt-3"
+        style="background-color: #6b7f6f"
     >
-      <FooterSocials/>
       <FooterBody/>
       <FooterCopyright/>
     </footer>
@@ -12,7 +11,15 @@
 </template>
 
 <script setup lang="ts">
-import FooterSocials from "@/components/Footer/FooterSocials.vue";
 import FooterCopyright from "@/components/Footer/FooterCopyright.vue";
 import FooterBody from "@/components/Footer/FooterBody.vue";
 </script>
+
+<style>
+footer {
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+</style>
