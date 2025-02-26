@@ -70,6 +70,10 @@ function onInvalidSubmit() {
 </script>
 
 <style>
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 .log-in-link {
   color: #6b7f6f;
   text-decoration: none;
@@ -77,13 +81,5 @@ function onInvalidSubmit() {
 
 .log-in-link:hover {
   color: #232b2b;
-}
-
-.img-fluid {
-  max-width: none;
-}
-.disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
 }
 </style>
